@@ -1,0 +1,43 @@
+
+uv venv
+uv pip install crewai
+
+.venv\Scripts\activate
+uv run pytest -s tests/test_standard_extractor_agent.py
+uv run pytest -s tests/test_fetch_document_tool.py
+uv run pytest -s tests/test_audit_report_agent.py
+uv run pytest -s tests/test_evidence_mapper_agent.py
+uv run pytest -s tests/test_auditsense_crew.py
+
+uv pip install fastapi uvicorn
+uv pip install masumi
+
+
+
+
+
+
+
+python main.py
+
+
+python -m pytest -s tests/test_fetch_document_tool.py
+python -m pytest -s tests/test_reader_agent.py
+python -m pytest -s tests/test_originality_check_tool.py
+python -m pytest -s tests/test_originality_agent.py
+python -m pytest -s tests/test_risk_dna_agent.py
+
+
+
+
+Masumi
+https://masumi-payment-service-production-7019.up.railway.app/api/v1/health/
+https://masumi-payment-service-production-7019.up.railway.app/admin
+https://masumi-payment-service-production-7019.up.railway.app/docs
+
+https://masumi-payment-service-production-1cef.up.railway.app/api/v1/health/
+https://masumi-payment-service-production-1cef.up.railway.app/admin
+https://masumi-payment-service-production-1cef.up.railway.app/docs
+
+
+
