@@ -221,8 +221,4 @@ A typical audit readiness report looks like:
 * Multi-document evidence ingestion
 * PDF → text pipeline
 * Support for SOC2, PCI-DSS, HIPAA, RBI CSF profiles
-* FastAPI wrapper (`/audit/run`)
-* Local embedding-based retrieval
-* Chain-of-thought suppression for production
-
 ---
